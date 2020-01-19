@@ -1,1 +1,14 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) ╭─icano@Ignacios-MacBook-Pro ~/Projects/udacity/DevOps_Microservices/project-ml-microservice-kubernetes ‹ruby-2.4.6› ‹master*›
+╰─$ ./run_kubernetes.sh                                                                                         130 ↵
+deployment.apps/udacity-prediction created
+NAME                                 READY   STATUS              RESTARTS   AGE
+udacity-prediction-54bb65bfd-57thd   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+(.devops) ╭─icano@Ignacios-MacBook-Pro ~/Projects/udacity/DevOps_Microservices/project-ml-microservice-kubernetes ‹ruby-2.4.6› ‹master*›
+╰─$ ./run_kubernetes.sh                                                                                           1 ↵
+Error from server (AlreadyExists): deployments.apps "udacity-prediction" already exists
+NAME                                 READY   STATUS    RESTARTS   AGE
+udacity-prediction-54bb65bfd-57thd   1/1     Running   0          7s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
