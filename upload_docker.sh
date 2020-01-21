@@ -11,7 +11,7 @@ dockerpath=icano/udacity-prediction
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-# docker login
+docker login
 docker tag $dockerpath:latest $dockerpath:${1:-latest}
 
 # Step 3:
